@@ -68,6 +68,18 @@ namespace staffmanagement
                     SelStaff = staff;
                     ShowInSelStaff();
                     saveButton.Enabled = true;
+
+                    foreach(Control a in TabPage1.Controls)
+                        a.Enabled = true;
+
+                    foreach(Control a in TabPage2.Controls)
+                        a.Enabled = true;
+
+                    foreach(Control a in TabPage3.Controls)
+                        a.Enabled = true;
+
+                    foreach(Control a in TabPage4.Controls)
+                        a.Enabled = true;
                 }
             }
         }
@@ -197,6 +209,18 @@ namespace staffmanagement
                     SelStaff = staff;
                     ShowInSelStaff();
                     saveButton.Enabled = true;
+
+                    foreach(Control a in TabPage1.Controls)
+                        a.Enabled = true;
+
+                    foreach(Control a in TabPage2.Controls)
+                        a.Enabled = true;
+
+                    foreach(Control a in TabPage3.Controls)
+                        a.Enabled = true;
+
+                    foreach(Control a in TabPage4.Controls)
+                        a.Enabled = true;
                 }
             }
         }

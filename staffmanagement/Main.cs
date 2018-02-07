@@ -3,6 +3,7 @@ using System.Windows.Forms;
 using SQLite;
 using System.Security.Cryptography;
 using Microsoft.VisualBasic;
+using System.Linq;
 
 namespace staffmanagement
 {
@@ -70,12 +71,26 @@ namespace staffmanagement
 
         private void تعديلToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            new ManageStaff { 
+            var t = new ManageStaff { 
                 MdiParent = this,
                 IsEdit = true,
                 saveButton = { Enabled = false },
                 Text = "تعديل الموظف"
-            }.Show();
+            };
+
+            foreach(Control a in t.TabPage1.Controls)
+                if(a.Name != "TeacherCode" && a.Name != "Identity") a.Enabled = false;
+
+            foreach(Control a in t.TabPage2.Controls)
+                a.Enabled = false;
+
+            foreach(Control a in t.TabPage3.Controls)
+                a.Enabled = false;
+
+            foreach(Control a in t.TabPage4.Controls)
+                a.Enabled = false;
+
+            t.Show();
         }
 
         private void خروجToolStripMenuItem_Click(object sender, EventArgs e)
