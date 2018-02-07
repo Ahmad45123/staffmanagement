@@ -33,64 +33,83 @@ namespace staffmanagement
         [DebuggerStepThrough]
         private void InitializeComponent()
         {
-            ComponentResourceManager manager = new ComponentResourceManager(typeof(DateFilterForm));
-            this.Label1 = new Label();
-            this.startDate = new DateTimePicker();
-            this.Label2 = new Label();
-            this.endDate = new DateTimePicker();
-            this.Button1 = new Button();
-            base.SuspendLayout();
+            this.Label1 = new System.Windows.Forms.Label();
+            this.startDate = new System.Windows.Forms.DateTimePicker();
+            this.Label2 = new System.Windows.Forms.Label();
+            this.endDate = new System.Windows.Forms.DateTimePicker();
+            this.Button1 = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // Label1
+            // 
             this.Label1.AutoSize = true;
-            this.Label1.Location = new Point(14, 14);
+            this.Label1.Location = new System.Drawing.Point(14, 14);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new Size(0x1c, 0x11);
+            this.Label1.Size = new System.Drawing.Size(28, 17);
             this.Label1.TabIndex = 0;
             this.Label1.Text = "من :";
-            this.startDate.Format = DateTimePickerFormat.Short;
-            this.startDate.Location = new Point(0x30, 9);
+            // 
+            // startDate
+            // 
+            this.startDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.startDate.Location = new System.Drawing.Point(48, 9);
             this.startDate.Name = "startDate";
             this.startDate.RightToLeftLayout = true;
-            this.startDate.Size = new Size(200, 0x17);
+            this.startDate.Size = new System.Drawing.Size(200, 23);
             this.startDate.TabIndex = 1;
+            // 
+            // Label2
+            // 
             this.Label2.AutoSize = true;
-            this.Label2.Location = new Point(12, 0x2b);
+            this.Label2.Location = new System.Drawing.Point(12, 43);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new Size(30, 0x11);
+            this.Label2.Size = new System.Drawing.Size(30, 17);
             this.Label2.TabIndex = 2;
             this.Label2.Text = "الي :";
-            this.endDate.Format = DateTimePickerFormat.Short;
-            this.endDate.Location = new Point(0x30, 0x26);
+            // 
+            // endDate
+            // 
+            this.endDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.endDate.Location = new System.Drawing.Point(48, 38);
             this.endDate.Name = "endDate";
             this.endDate.RightToLeftLayout = true;
-            this.endDate.Size = new Size(200, 0x17);
+            this.endDate.Size = new System.Drawing.Size(200, 23);
             this.endDate.TabIndex = 3;
-            this.Button1.Location = new Point(0xad, 0x43);
+            // 
+            // Button1
+            // 
+            this.Button1.Location = new System.Drawing.Point(173, 67);
             this.Button1.Name = "Button1";
-            this.Button1.Size = new Size(0x4b, 30);
+            this.Button1.Size = new System.Drawing.Size(75, 30);
             this.Button1.TabIndex = 4;
             this.Button1.Text = "تم";
             this.Button1.UseVisualStyleBackColor = true;
-            base.AcceptButton = this.Button1;
-            base.AutoScaleDimensions = new SizeF(8f, 16f);
-            base.AutoScaleMode = AutoScaleMode.Font;
-            base.ClientSize = new Size(0x109, 0x6b);
-            base.Controls.Add(this.Button1);
-            base.Controls.Add(this.endDate);
-            base.Controls.Add(this.Label2);
-            base.Controls.Add(this.startDate);
-            base.Controls.Add(this.Label1);
-            this.Font = new Font("Microsoft Sans Serif", 10f);
-            base.FormBorderStyle = FormBorderStyle.FixedSingle;
-            base.Margin = new Padding(4);
-            base.MaximizeBox = false;
-            base.MinimizeBox = false;
-            base.Name = "DateFilterForm";
-            this.RightToLeft = RightToLeft.Yes;
+            this.Button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // DateFilterForm
+            // 
+            this.AcceptButton = this.Button1;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(265, 107);
+            this.Controls.Add(this.Button1);
+            this.Controls.Add(this.endDate);
+            this.Controls.Add(this.Label2);
+            this.Controls.Add(this.startDate);
+            this.Controls.Add(this.Label1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "DateFilterForm";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
-            base.StartPosition = FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DateFilterForm";
-            base.ResumeLayout(false);
-            base.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
     }
 }

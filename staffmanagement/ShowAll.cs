@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
@@ -143,6 +144,7 @@ namespace staffmanagement
                         }
                     }
                 }
+                list.Add(item);
             }
 
             dataGrid.Rows.AddRange(list.ToArray());
@@ -157,7 +159,7 @@ namespace staffmanagement
                 if (info.GetCustomAttributes(false).Length != 0)
                 {
                     object argument = info.GetCustomAttributes(false).ElementAtOrDefault(0);
-                    string headerText = Convert.ToString(argument);
+                    string headerText = Convert.ToString(((DisplayNameAttribute)argument).DisplayName);
                     int num2 = dataGrid.Columns.Add(info.Name, headerText);
                     dataGrid.Columns[num2].Tag = info.PropertyType;
                     dataGrid.Columns[num2].DataPropertyName = info.Name;
@@ -176,6 +178,7 @@ namespace staffmanagement
             dataGrid.SuspendLayout();
             if (_headerSelected != -1)
             {
+                LoadStaffListIntoList(Main.Db.Table<Staff>());
                 if ((Type)dataGrid.Columns[_headerSelected].Tag == typeof(string))
                 {
                     StringFilterForm form = new StringFilterForm

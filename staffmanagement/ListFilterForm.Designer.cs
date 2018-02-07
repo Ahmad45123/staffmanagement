@@ -30,38 +30,48 @@ namespace staffmanagement
         [DebuggerStepThrough]
         private void InitializeComponent()
         {
-            ComponentResourceManager manager = new ComponentResourceManager(typeof(ListFilterForm));
-            this.listBox = new ComboBox();
-            this.Button1 = new Button();
-            base.SuspendLayout();
-            this.listBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            this.listBox = new System.Windows.Forms.ComboBox();
+            this.Button1 = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // listBox
+            // 
+            this.listBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.listBox.FormattingEnabled = true;
-            this.listBox.Location = new Point(13, 13);
-            this.listBox.Margin = new Padding(4, 4, 4, 4);
+            this.listBox.Location = new System.Drawing.Point(13, 13);
+            this.listBox.Margin = new System.Windows.Forms.Padding(4);
             this.listBox.Name = "listBox";
-            this.listBox.Size = new Size(0x148, 0x18);
+            this.listBox.Size = new System.Drawing.Size(328, 24);
             this.listBox.TabIndex = 0;
-            this.Button1.Location = new Point(0x10a, 0x2c);
+            // 
+            // Button1
+            // 
+            this.Button1.Location = new System.Drawing.Point(266, 44);
             this.Button1.Name = "Button1";
-            this.Button1.Size = new Size(0x4b, 0x1b);
+            this.Button1.Size = new System.Drawing.Size(75, 27);
             this.Button1.TabIndex = 1;
             this.Button1.Text = "تم";
             this.Button1.UseVisualStyleBackColor = true;
-            base.AcceptButton = this.Button1;
-            base.AutoScaleDimensions = new SizeF(8f, 16f);
-            base.AutoScaleMode = AutoScaleMode.Font;
-            base.ClientSize = new Size(0x162, 0x52);
-            base.Controls.Add(this.Button1);
-            base.Controls.Add(this.listBox);
-            this.Font = new Font("Microsoft Sans Serif", 10f);
-            base.Margin = new Padding(4, 4, 4, 4);
-            base.MaximizeBox = false;
-            base.MinimizeBox = false;
-            base.Name = "ListFilterForm";
-            this.RightToLeft = RightToLeft.Yes;
+            this.Button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // ListFilterForm
+            // 
+            this.AcceptButton = this.Button1;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(354, 82);
+            this.Controls.Add(this.Button1);
+            this.Controls.Add(this.listBox);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "ListFilterForm";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.Text = "ListFilterForm";
-            base.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
     }
 }

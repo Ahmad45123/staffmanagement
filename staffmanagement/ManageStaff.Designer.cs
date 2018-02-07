@@ -164,300 +164,423 @@ namespace staffmanagement
         [DebuggerStepThrough]
         private void InitializeComponent()
         {
-            ComponentResourceManager manager = new ComponentResourceManager(typeof(ManageStaff));
-            this.FinancialClassEndDate = new DateTimePicker();
-            this.Label25 = new Label();
-            this.FinancialClassStartDate = new DateTimePicker();
-            this.Label24 = new Label();
-            this.FinancialClassDecisionNo = new TextBox();
-            this.Label23 = new Label();
-            this.FinancialClass = new TextBox();
-            this.Label22 = new Label();
-            this.CurrentJobDecisionNoDate = new DateTimePicker();
-            this.Label21 = new Label();
-            this.CurrentJobDecisionNo = new TextBox();
-            this.Label20 = new Label();
-            this.SpecificGroup = new TextBox();
-            this.Label19 = new Label();
-            this.TypeOfAppointment = new TextBox();
-            this.Label18 = new Label();
-            this.DateOfStartWork = new DateTimePicker();
-            this.Label17 = new Label();
-            this.CurrentJob = new ComboBox();
-            this.Label16 = new Label();
-            this.CurrentDepartment = new ComboBox();
-            this.Label15 = new Label();
-            this.StatusOfJob = new TextBox();
-            this.Label14 = new Label();
-            this.DateOfAppointment = new DateTimePicker();
-            this.Label13 = new Label();
-            this.PlaceOfQualification = new TextBox();
-            this.Label30 = new Label();
-            this.MarkOfQualification = new TextBox();
-            this.Label29 = new Label();
-            this.DateOfQualification = new DateTimePicker();
-            this.Label28 = new Label();
-            this.Qualification = new TextBox();
-            this.Label27 = new Label();
-            this.TypeOfQualification = new TextBox();
-            this.Label26 = new Label();
-            this.TeachSubject = new TextBox();
-            this.Label31 = new Label();
-            this.saveButton = new Button();
-            this.TabControl1 = new TabControl();
-            this.TabPage1 = new TabPage();
-            this.PhoneNumber = new TextBox();
-            this.Label12 = new Label();
-            this.Address = new TextBox();
-            this.Label11 = new Label();
-            this.AddressGovernerate = new TextBox();
-            this.Label10 = new Label();
-            this.MartialStatus = new ComboBox();
-            this.Label9 = new Label();
-            this.Nationality = new TextBox();
-            this.Label8 = new Label();
-            this.Relegion = new ComboBox();
-            this.Label7 = new Label();
-            this.Gender = new ComboBox();
-            this.Label6 = new Label();
-            this.BirthGovernerate = new TextBox();
-            this.Label5 = new Label();
-            this.DateOfBirth = new DateTimePicker();
-            this.Label4 = new Label();
-            this.Identity = new TextBox();
-            this.Label3 = new Label();
-            this.TeacherCode = new TextBox();
-            this.StaffName = new TextBox();
-            this.Label2 = new Label();
-            this.Label1 = new Label();
-            this.TabPage2 = new TabPage();
-            this.TabPage3 = new TabPage();
-            this.TabPage4 = new TabPage();
-            this.PrintButton = new Button();
-            this.editButton = new Button();
+            this.FinancialClassEndDate = new System.Windows.Forms.DateTimePicker();
+            this.Label25 = new System.Windows.Forms.Label();
+            this.FinancialClassStartDate = new System.Windows.Forms.DateTimePicker();
+            this.Label24 = new System.Windows.Forms.Label();
+            this.FinancialClassDecisionNo = new System.Windows.Forms.TextBox();
+            this.Label23 = new System.Windows.Forms.Label();
+            this.FinancialClass = new System.Windows.Forms.TextBox();
+            this.Label22 = new System.Windows.Forms.Label();
+            this.CurrentJobDecisionNoDate = new System.Windows.Forms.DateTimePicker();
+            this.Label21 = new System.Windows.Forms.Label();
+            this.CurrentJobDecisionNo = new System.Windows.Forms.TextBox();
+            this.Label20 = new System.Windows.Forms.Label();
+            this.SpecificGroup = new System.Windows.Forms.TextBox();
+            this.Label19 = new System.Windows.Forms.Label();
+            this.TypeOfAppointment = new System.Windows.Forms.TextBox();
+            this.Label18 = new System.Windows.Forms.Label();
+            this.DateOfStartWork = new System.Windows.Forms.DateTimePicker();
+            this.Label17 = new System.Windows.Forms.Label();
+            this.CurrentJob = new System.Windows.Forms.ComboBox();
+            this.Label16 = new System.Windows.Forms.Label();
+            this.CurrentDepartment = new System.Windows.Forms.ComboBox();
+            this.Label15 = new System.Windows.Forms.Label();
+            this.StatusOfJob = new System.Windows.Forms.TextBox();
+            this.Label14 = new System.Windows.Forms.Label();
+            this.DateOfAppointment = new System.Windows.Forms.DateTimePicker();
+            this.Label13 = new System.Windows.Forms.Label();
+            this.PlaceOfQualification = new System.Windows.Forms.TextBox();
+            this.Label30 = new System.Windows.Forms.Label();
+            this.MarkOfQualification = new System.Windows.Forms.TextBox();
+            this.Label29 = new System.Windows.Forms.Label();
+            this.DateOfQualification = new System.Windows.Forms.DateTimePicker();
+            this.Label28 = new System.Windows.Forms.Label();
+            this.Qualification = new System.Windows.Forms.TextBox();
+            this.Label27 = new System.Windows.Forms.Label();
+            this.TypeOfQualification = new System.Windows.Forms.TextBox();
+            this.Label26 = new System.Windows.Forms.Label();
+            this.TeachSubject = new System.Windows.Forms.TextBox();
+            this.Label31 = new System.Windows.Forms.Label();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.TabControl1 = new System.Windows.Forms.TabControl();
+            this.TabPage1 = new System.Windows.Forms.TabPage();
+            this.PhoneNumber = new System.Windows.Forms.TextBox();
+            this.Label12 = new System.Windows.Forms.Label();
+            this.Address = new System.Windows.Forms.TextBox();
+            this.Label11 = new System.Windows.Forms.Label();
+            this.AddressGovernerate = new System.Windows.Forms.TextBox();
+            this.Label10 = new System.Windows.Forms.Label();
+            this.MartialStatus = new System.Windows.Forms.ComboBox();
+            this.Label9 = new System.Windows.Forms.Label();
+            this.Nationality = new System.Windows.Forms.TextBox();
+            this.Label8 = new System.Windows.Forms.Label();
+            this.Relegion = new System.Windows.Forms.ComboBox();
+            this.Label7 = new System.Windows.Forms.Label();
+            this.Gender = new System.Windows.Forms.ComboBox();
+            this.Label6 = new System.Windows.Forms.Label();
+            this.BirthGovernerate = new System.Windows.Forms.TextBox();
+            this.Label5 = new System.Windows.Forms.Label();
+            this.DateOfBirth = new System.Windows.Forms.DateTimePicker();
+            this.Label4 = new System.Windows.Forms.Label();
+            this.Identity = new System.Windows.Forms.TextBox();
+            this.Label3 = new System.Windows.Forms.Label();
+            this.TeacherCode = new System.Windows.Forms.TextBox();
+            this.StaffName = new System.Windows.Forms.TextBox();
+            this.Label2 = new System.Windows.Forms.Label();
+            this.Label1 = new System.Windows.Forms.Label();
+            this.TabPage2 = new System.Windows.Forms.TabPage();
+            this.TabPage3 = new System.Windows.Forms.TabPage();
+            this.TabPage4 = new System.Windows.Forms.TabPage();
+            this.PrintButton = new System.Windows.Forms.Button();
+            this.editButton = new System.Windows.Forms.Button();
             this.TabControl1.SuspendLayout();
             this.TabPage1.SuspendLayout();
             this.TabPage2.SuspendLayout();
             this.TabPage3.SuspendLayout();
             this.TabPage4.SuspendLayout();
-            base.SuspendLayout();
-            this.FinancialClassEndDate.Format = DateTimePickerFormat.Short;
-            this.FinancialClassEndDate.Location = new Point(0x18f, 0x9e);
+            this.SuspendLayout();
+            // 
+            // FinancialClassEndDate
+            // 
+            this.FinancialClassEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.FinancialClassEndDate.Location = new System.Drawing.Point(399, 158);
             this.FinancialClassEndDate.Name = "FinancialClassEndDate";
-            this.FinancialClassEndDate.Size = new Size(0x67, 20);
-            this.FinancialClassEndDate.TabIndex = 0x2f;
+            this.FinancialClassEndDate.Size = new System.Drawing.Size(103, 20);
+            this.FinancialClassEndDate.TabIndex = 47;
+            // 
+            // Label25
+            // 
             this.Label25.AutoSize = true;
-            this.Label25.Location = new Point(0x1f9, 0xa1);
+            this.Label25.Location = new System.Drawing.Point(505, 161);
             this.Label25.Name = "Label25";
-            this.Label25.Size = new Size(0x85, 13);
-            this.Label25.TabIndex = 0x2e;
+            this.Label25.Size = new System.Drawing.Size(133, 13);
+            this.Label25.TabIndex = 46;
             this.Label25.Text = "تاريخ سريان الدرجة الحالية :";
-            this.FinancialClassStartDate.Format = DateTimePickerFormat.Short;
-            this.FinancialClassStartDate.Location = new Point(0x74, 130);
+            // 
+            // FinancialClassStartDate
+            // 
+            this.FinancialClassStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.FinancialClassStartDate.Location = new System.Drawing.Point(116, 130);
             this.FinancialClassStartDate.Name = "FinancialClassStartDate";
-            this.FinancialClassStartDate.Size = new Size(0x67, 20);
-            this.FinancialClassStartDate.TabIndex = 0x2d;
+            this.FinancialClassStartDate.Size = new System.Drawing.Size(103, 20);
+            this.FinancialClassStartDate.TabIndex = 45;
+            // 
+            // Label24
+            // 
             this.Label24.AutoSize = true;
-            this.Label24.Location = new Point(0xe1, 0x85);
+            this.Label24.Location = new System.Drawing.Point(225, 133);
             this.Label24.Name = "Label24";
-            this.Label24.Size = new Size(0x5b, 13);
-            this.Label24.TabIndex = 0x2c;
+            this.Label24.Size = new System.Drawing.Size(91, 13);
+            this.Label24.TabIndex = 44;
             this.Label24.Text = "تاريخ قرار الدرجة :";
-            this.FinancialClassDecisionNo.Location = new Point(0x14b, 130);
+            // 
+            // FinancialClassDecisionNo
+            // 
+            this.FinancialClassDecisionNo.Location = new System.Drawing.Point(331, 130);
             this.FinancialClassDecisionNo.Name = "FinancialClassDecisionNo";
-            this.FinancialClassDecisionNo.Size = new Size(180, 20);
-            this.FinancialClassDecisionNo.TabIndex = 0x2b;
+            this.FinancialClassDecisionNo.Size = new System.Drawing.Size(180, 20);
+            this.FinancialClassDecisionNo.TabIndex = 43;
+            // 
+            // Label23
+            // 
             this.Label23.AutoSize = true;
-            this.Label23.Location = new Point(0x205, 0x85);
+            this.Label23.Location = new System.Drawing.Point(517, 133);
             this.Label23.Name = "Label23";
-            this.Label23.Size = new Size(0x72, 13);
-            this.Label23.TabIndex = 0x2a;
+            this.Label23.Size = new System.Drawing.Size(114, 13);
+            this.Label23.TabIndex = 42;
             this.Label23.Text = "رقم قرار الدرجة الحالية :";
-            this.FinancialClass.Location = new Point(0xa7, 100);
+            // 
+            // FinancialClass
+            // 
+            this.FinancialClass.Location = new System.Drawing.Point(167, 100);
             this.FinancialClass.Name = "FinancialClass";
-            this.FinancialClass.Size = new Size(0x70, 20);
-            this.FinancialClass.TabIndex = 0x29;
+            this.FinancialClass.Size = new System.Drawing.Size(112, 20);
+            this.FinancialClass.TabIndex = 41;
+            // 
+            // Label22
+            // 
             this.Label22.AutoSize = true;
-            this.Label22.Location = new Point(0x11d, 0x67);
+            this.Label22.Location = new System.Drawing.Point(285, 103);
             this.Label22.Name = "Label22";
-            this.Label22.Size = new Size(0x67, 13);
+            this.Label22.Size = new System.Drawing.Size(103, 13);
             this.Label22.TabIndex = 40;
             this.Label22.Text = "الدرحة المالية الحالية :";
-            this.CurrentJobDecisionNoDate.Format = DateTimePickerFormat.Short;
-            this.CurrentJobDecisionNoDate.Location = new Point(0x18f, 100);
+            // 
+            // CurrentJobDecisionNoDate
+            // 
+            this.CurrentJobDecisionNoDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.CurrentJobDecisionNoDate.Location = new System.Drawing.Point(399, 100);
             this.CurrentJobDecisionNoDate.Name = "CurrentJobDecisionNoDate";
-            this.CurrentJobDecisionNoDate.Size = new Size(0x67, 20);
-            this.CurrentJobDecisionNoDate.TabIndex = 0x27;
+            this.CurrentJobDecisionNoDate.Size = new System.Drawing.Size(103, 20);
+            this.CurrentJobDecisionNoDate.TabIndex = 39;
+            // 
+            // Label21
+            // 
             this.Label21.AutoSize = true;
-            this.Label21.Location = new Point(0x1fd, 0x67);
+            this.Label21.Location = new System.Drawing.Point(509, 103);
             this.Label21.Name = "Label21";
-            this.Label21.Size = new Size(0x80, 13);
-            this.Label21.TabIndex = 0x26;
+            this.Label21.Size = new System.Drawing.Size(128, 13);
+            this.Label21.TabIndex = 38;
             this.Label21.Text = "تاريخ قرار الوظيفة الحالية :";
-            this.CurrentJobDecisionNo.Location = new Point(12, 0x47);
+            // 
+            // CurrentJobDecisionNo
+            // 
+            this.CurrentJobDecisionNo.Location = new System.Drawing.Point(12, 71);
             this.CurrentJobDecisionNo.Name = "CurrentJobDecisionNo";
-            this.CurrentJobDecisionNo.Size = new Size(180, 20);
-            this.CurrentJobDecisionNo.TabIndex = 0x25;
+            this.CurrentJobDecisionNo.Size = new System.Drawing.Size(180, 20);
+            this.CurrentJobDecisionNo.TabIndex = 37;
+            // 
+            // Label20
+            // 
             this.Label20.AutoSize = true;
-            this.Label20.Location = new Point(0xc6, 0x4a);
+            this.Label20.Location = new System.Drawing.Point(198, 74);
             this.Label20.Name = "Label20";
-            this.Label20.Size = new Size(0x77, 13);
-            this.Label20.TabIndex = 0x24;
+            this.Label20.Size = new System.Drawing.Size(119, 13);
+            this.Label20.TabIndex = 36;
             this.Label20.Text = "رقم قرار الوظيفة الحالية :";
-            this.SpecificGroup.Location = new Point(330, 0x47);
+            // 
+            // SpecificGroup
+            // 
+            this.SpecificGroup.Location = new System.Drawing.Point(330, 71);
             this.SpecificGroup.Name = "SpecificGroup";
-            this.SpecificGroup.Size = new Size(0xd3, 20);
-            this.SpecificGroup.TabIndex = 0x23;
+            this.SpecificGroup.Size = new System.Drawing.Size(211, 20);
+            this.SpecificGroup.TabIndex = 35;
+            // 
+            // Label19
+            // 
             this.Label19.AutoSize = true;
-            this.Label19.Location = new Point(0x223, 0x4a);
+            this.Label19.Location = new System.Drawing.Point(547, 74);
             this.Label19.Name = "Label19";
-            this.Label19.Size = new Size(0x59, 13);
-            this.Label19.TabIndex = 0x22;
+            this.Label19.Size = new System.Drawing.Size(89, 13);
+            this.Label19.TabIndex = 34;
             this.Label19.Text = "المجموعة النوعية :";
-            this.TypeOfAppointment.Location = new Point(12, 0x2a);
+            // 
+            // TypeOfAppointment
+            // 
+            this.TypeOfAppointment.Location = new System.Drawing.Point(12, 42);
             this.TypeOfAppointment.Name = "TypeOfAppointment";
-            this.TypeOfAppointment.Size = new Size(0x74, 20);
-            this.TypeOfAppointment.TabIndex = 0x21;
+            this.TypeOfAppointment.Size = new System.Drawing.Size(116, 20);
+            this.TypeOfAppointment.TabIndex = 33;
+            // 
+            // Label18
+            // 
             this.Label18.AutoSize = true;
-            this.Label18.Location = new Point(0x86, 0x2d);
+            this.Label18.Location = new System.Drawing.Point(134, 45);
             this.Label18.Name = "Label18";
-            this.Label18.Size = new Size(0x40, 13);
-            this.Label18.TabIndex = 0x20;
+            this.Label18.Size = new System.Drawing.Size(64, 13);
+            this.Label18.TabIndex = 32;
             this.Label18.Text = "نوع التعيين :";
-            this.DateOfStartWork.Format = DateTimePickerFormat.Short;
-            this.DateOfStartWork.Location = new Point(0xcc, 0x2a);
+            // 
+            // DateOfStartWork
+            // 
+            this.DateOfStartWork.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DateOfStartWork.Location = new System.Drawing.Point(204, 42);
             this.DateOfStartWork.Name = "DateOfStartWork";
-            this.DateOfStartWork.Size = new Size(0x67, 20);
-            this.DateOfStartWork.TabIndex = 0x1f;
+            this.DateOfStartWork.Size = new System.Drawing.Size(103, 20);
+            this.DateOfStartWork.TabIndex = 31;
+            // 
+            // Label17
+            // 
             this.Label17.AutoSize = true;
-            this.Label17.Location = new Point(0x139, 0x2d);
+            this.Label17.Location = new System.Drawing.Point(313, 45);
             this.Label17.Name = "Label17";
-            this.Label17.Size = new Size(0x60, 13);
+            this.Label17.Size = new System.Drawing.Size(96, 13);
             this.Label17.TabIndex = 30;
             this.Label17.Text = "تاريخ استلام العمل :";
-            this.CurrentJob.DropDownStyle = ComboBoxStyle.DropDownList;
+            // 
+            // CurrentJob
+            // 
+            this.CurrentJob.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CurrentJob.FormattingEnabled = true;
-            this.CurrentJob.Location = new Point(0xc6, 12);
+            this.CurrentJob.Location = new System.Drawing.Point(198, 12);
             this.CurrentJob.Name = "CurrentJob";
-            this.CurrentJob.Size = new Size(0xb6, 0x15);
-            this.CurrentJob.TabIndex = 0x1d;
+            this.CurrentJob.Size = new System.Drawing.Size(182, 21);
+            this.CurrentJob.TabIndex = 29;
+            // 
+            // Label16
+            // 
             this.Label16.AutoSize = true;
-            this.Label16.Location = new Point(0x182, 15);
+            this.Label16.Location = new System.Drawing.Point(386, 15);
             this.Label16.Name = "Label16";
-            this.Label16.Size = new Size(0x2e, 13);
-            this.Label16.TabIndex = 0x1c;
+            this.Label16.Size = new System.Drawing.Size(46, 13);
+            this.Label16.TabIndex = 28;
             this.Label16.Text = "الوظيفة :";
-            this.CurrentDepartment.DropDownStyle = ComboBoxStyle.DropDownList;
+            // 
+            // CurrentDepartment
+            // 
+            this.CurrentDepartment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CurrentDepartment.FormattingEnabled = true;
-            this.CurrentDepartment.Location = new Point(440, 12);
+            this.CurrentDepartment.Location = new System.Drawing.Point(440, 12);
             this.CurrentDepartment.Name = "CurrentDepartment";
-            this.CurrentDepartment.Size = new Size(0x9d, 0x15);
-            this.CurrentDepartment.TabIndex = 0x1b;
+            this.CurrentDepartment.Size = new System.Drawing.Size(157, 21);
+            this.CurrentDepartment.TabIndex = 27;
+            // 
+            // Label15
+            // 
             this.Label15.AutoSize = true;
-            this.Label15.Location = new Point(0x25b, 15);
+            this.Label15.Location = new System.Drawing.Point(603, 15);
             this.Label15.Name = "Label15";
-            this.Label15.Size = new Size(0x26, 13);
-            this.Label15.TabIndex = 0x1a;
+            this.Label15.Size = new System.Drawing.Size(38, 13);
+            this.Label15.TabIndex = 26;
             this.Label15.Text = "القسم :";
-            this.StatusOfJob.Location = new Point(0x1a1, 0x2a);
+            // 
+            // StatusOfJob
+            // 
+            this.StatusOfJob.Location = new System.Drawing.Point(417, 42);
             this.StatusOfJob.Name = "StatusOfJob";
-            this.StatusOfJob.Size = new Size(0x80, 20);
-            this.StatusOfJob.TabIndex = 0x19;
+            this.StatusOfJob.Size = new System.Drawing.Size(128, 20);
+            this.StatusOfJob.TabIndex = 25;
+            // 
+            // Label14
+            // 
             this.Label14.AutoSize = true;
-            this.Label14.Location = new Point(0x227, 0x2d);
+            this.Label14.Location = new System.Drawing.Point(551, 45);
             this.Label14.Name = "Label14";
-            this.Label14.Size = new Size(0x57, 13);
-            this.Label14.TabIndex = 0x18;
+            this.Label14.Size = new System.Drawing.Size(87, 13);
+            this.Label14.TabIndex = 24;
             this.Label14.Text = "الموقف من العمل :";
-            this.DateOfAppointment.Format = DateTimePickerFormat.Short;
-            this.DateOfAppointment.Location = new Point(12, 12);
+            // 
+            // DateOfAppointment
+            // 
+            this.DateOfAppointment.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DateOfAppointment.Location = new System.Drawing.Point(12, 12);
             this.DateOfAppointment.Name = "DateOfAppointment";
-            this.DateOfAppointment.Size = new Size(0x67, 20);
+            this.DateOfAppointment.Size = new System.Drawing.Size(103, 20);
             this.DateOfAppointment.TabIndex = 9;
+            // 
+            // Label13
+            // 
             this.Label13.AutoSize = true;
-            this.Label13.Location = new Point(0x79, 15);
+            this.Label13.Location = new System.Drawing.Point(121, 15);
             this.Label13.Name = "Label13";
-            this.Label13.Size = new Size(0x48, 13);
+            this.Label13.Size = new System.Drawing.Size(72, 13);
             this.Label13.TabIndex = 8;
             this.Label13.Text = "تاريخ التعيين :";
-            this.PlaceOfQualification.Location = new Point(0x11, 0x2e);
+            // 
+            // PlaceOfQualification
+            // 
+            this.PlaceOfQualification.Location = new System.Drawing.Point(17, 46);
             this.PlaceOfQualification.Name = "PlaceOfQualification";
-            this.PlaceOfQualification.Size = new Size(0xb9, 20);
-            this.PlaceOfQualification.TabIndex = 0x33;
+            this.PlaceOfQualification.Size = new System.Drawing.Size(185, 20);
+            this.PlaceOfQualification.TabIndex = 51;
+            // 
+            // Label30
+            // 
             this.Label30.AutoSize = true;
-            this.Label30.Location = new Point(0xd0, 0x31);
+            this.Label30.Location = new System.Drawing.Point(208, 49);
             this.Label30.Name = "Label30";
-            this.Label30.Size = new Size(0x7e, 13);
+            this.Label30.Size = new System.Drawing.Size(126, 13);
             this.Label30.TabIndex = 50;
             this.Label30.Text = "جهة الحصول علي المؤهل :";
-            this.MarkOfQualification.Location = new Point(0x159, 0x2e);
+            // 
+            // MarkOfQualification
+            // 
+            this.MarkOfQualification.Location = new System.Drawing.Point(345, 46);
             this.MarkOfQualification.Name = "MarkOfQualification";
-            this.MarkOfQualification.Size = new Size(230, 20);
-            this.MarkOfQualification.TabIndex = 0x31;
+            this.MarkOfQualification.Size = new System.Drawing.Size(230, 20);
+            this.MarkOfQualification.TabIndex = 49;
+            // 
+            // Label29
+            // 
             this.Label29.AutoSize = true;
-            this.Label29.Location = new Point(0x241, 0x31);
+            this.Label29.Location = new System.Drawing.Point(577, 49);
             this.Label29.Name = "Label29";
-            this.Label29.Size = new Size(70, 13);
-            this.Label29.TabIndex = 0x30;
+            this.Label29.Size = new System.Drawing.Size(70, 13);
+            this.Label29.TabIndex = 48;
             this.Label29.Text = "تقدير المؤهل :";
-            this.DateOfQualification.Format = DateTimePickerFormat.Short;
-            this.DateOfQualification.Location = new Point(15, 0x10);
+            // 
+            // DateOfQualification
+            // 
+            this.DateOfQualification.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DateOfQualification.Location = new System.Drawing.Point(15, 16);
             this.DateOfQualification.Name = "DateOfQualification";
-            this.DateOfQualification.Size = new Size(0x67, 20);
-            this.DateOfQualification.TabIndex = 0x2f;
+            this.DateOfQualification.Size = new System.Drawing.Size(103, 20);
+            this.DateOfQualification.TabIndex = 47;
+            // 
+            // Label28
+            // 
             this.Label28.AutoSize = true;
-            this.Label28.Location = new Point(0x79, 0x13);
+            this.Label28.Location = new System.Drawing.Point(121, 19);
             this.Label28.Name = "Label28";
-            this.Label28.Size = new Size(0x85, 13);
-            this.Label28.TabIndex = 0x2e;
+            this.Label28.Size = new System.Drawing.Size(133, 13);
+            this.Label28.TabIndex = 46;
             this.Label28.Text = "تاريخ الحصول علي المؤهل :";
-            this.Qualification.Location = new Point(0x10b, 0x11);
+            // 
+            // Qualification
+            // 
+            this.Qualification.Location = new System.Drawing.Point(267, 17);
             this.Qualification.Name = "Qualification";
-            this.Qualification.Size = new Size(0x79, 20);
-            this.Qualification.TabIndex = 0x1d;
+            this.Qualification.Size = new System.Drawing.Size(121, 20);
+            this.Qualification.TabIndex = 29;
+            // 
+            // Label27
+            // 
             this.Label27.AutoSize = true;
-            this.Label27.Location = new Point(0x18a, 20);
+            this.Label27.Location = new System.Drawing.Point(394, 20);
             this.Label27.Name = "Label27";
-            this.Label27.Size = new Size(0x2c, 13);
-            this.Label27.TabIndex = 0x1c;
+            this.Label27.Size = new System.Drawing.Size(44, 13);
+            this.Label27.TabIndex = 28;
             this.Label27.Text = "المؤهل :";
-            this.TypeOfQualification.Location = new Point(0x1be, 0x11);
+            // 
+            // TypeOfQualification
+            // 
+            this.TypeOfQualification.Location = new System.Drawing.Point(446, 17);
             this.TypeOfQualification.Name = "TypeOfQualification";
-            this.TypeOfQualification.Size = new Size(0x80, 20);
-            this.TypeOfQualification.TabIndex = 0x1b;
+            this.TypeOfQualification.Size = new System.Drawing.Size(128, 20);
+            this.TypeOfQualification.TabIndex = 27;
+            // 
+            // Label26
+            // 
             this.Label26.AutoSize = true;
-            this.Label26.Location = new Point(580, 20);
+            this.Label26.Location = new System.Drawing.Point(580, 20);
             this.Label26.Name = "Label26";
-            this.Label26.Size = new Size(0x40, 13);
-            this.Label26.TabIndex = 0x1a;
+            this.Label26.Size = new System.Drawing.Size(64, 13);
+            this.Label26.TabIndex = 26;
             this.Label26.Text = "نوع المؤهل :";
-            this.TeachSubject.Location = new Point(340, 0x10);
+            // 
+            // TeachSubject
+            // 
+            this.TeachSubject.Location = new System.Drawing.Point(340, 16);
             this.TeachSubject.Name = "TeachSubject";
-            this.TeachSubject.Size = new Size(230, 20);
-            this.TeachSubject.TabIndex = 0x33;
+            this.TeachSubject.Size = new System.Drawing.Size(230, 20);
+            this.TeachSubject.TabIndex = 51;
+            // 
+            // Label31
+            // 
             this.Label31.AutoSize = true;
-            this.Label31.Location = new Point(0x23c, 0x13);
+            this.Label31.Location = new System.Drawing.Point(572, 19);
             this.Label31.Name = "Label31";
-            this.Label31.Size = new Size(0x45, 13);
+            this.Label31.Size = new System.Drawing.Size(69, 13);
             this.Label31.TabIndex = 50;
             this.Label31.Text = "مادة التدريس :";
-            this.saveButton.Font = new Font("Microsoft Sans Serif", 10f);
-            this.saveButton.Location = new Point(0x206, 0xe4);
+            // 
+            // saveButton
+            // 
+            this.saveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.saveButton.Location = new System.Drawing.Point(518, 228);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new Size(0x99, 0x22);
-            this.saveButton.TabIndex = 0x35;
+            this.saveButton.Size = new System.Drawing.Size(153, 34);
+            this.saveButton.TabIndex = 53;
             this.saveButton.Text = "حفظ";
             this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+            // 
+            // TabControl1
+            // 
             this.TabControl1.Controls.Add(this.TabPage1);
             this.TabControl1.Controls.Add(this.TabPage2);
             this.TabControl1.Controls.Add(this.TabPage3);
             this.TabControl1.Controls.Add(this.TabPage4);
-            this.TabControl1.Location = new Point(12, 8);
+            this.TabControl1.Location = new System.Drawing.Point(12, 8);
             this.TabControl1.Name = "TabControl1";
             this.TabControl1.RightToLeftLayout = true;
             this.TabControl1.SelectedIndex = 0;
-            this.TabControl1.Size = new Size(0x297, 0xd6);
-            this.TabControl1.TabIndex = 0x36;
+            this.TabControl1.Size = new System.Drawing.Size(663, 214);
+            this.TabControl1.TabIndex = 54;
+            // 
+            // TabPage1
+            // 
             this.TabPage1.Controls.Add(this.PhoneNumber);
             this.TabPage1.Controls.Add(this.Label12);
             this.TabPage1.Controls.Add(this.Address);
@@ -482,146 +605,230 @@ namespace staffmanagement
             this.TabPage1.Controls.Add(this.StaffName);
             this.TabPage1.Controls.Add(this.Label2);
             this.TabPage1.Controls.Add(this.Label1);
-            this.TabPage1.Location = new Point(4, 0x16);
+            this.TabPage1.Location = new System.Drawing.Point(4, 22);
             this.TabPage1.Name = "TabPage1";
-            this.TabPage1.Padding = new Padding(3);
-            this.TabPage1.Size = new Size(0x28f, 0xbc);
+            this.TabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.TabPage1.Size = new System.Drawing.Size(655, 188);
             this.TabPage1.TabIndex = 0;
             this.TabPage1.Text = "البيانات الاساسية";
             this.TabPage1.UseVisualStyleBackColor = true;
-            this.PhoneNumber.Location = new Point(0x1bc, 0x89);
+            // 
+            // PhoneNumber
+            // 
+            this.PhoneNumber.Location = new System.Drawing.Point(444, 137);
             this.PhoneNumber.Name = "PhoneNumber";
-            this.PhoneNumber.Size = new Size(0x80, 20);
-            this.PhoneNumber.TabIndex = 0x2f;
+            this.PhoneNumber.Size = new System.Drawing.Size(128, 20);
+            this.PhoneNumber.TabIndex = 47;
+            // 
+            // Label12
+            // 
             this.Label12.AutoSize = true;
-            this.Label12.Location = new Point(0x242, 140);
+            this.Label12.Location = new System.Drawing.Point(578, 140);
             this.Label12.Name = "Label12";
-            this.Label12.Size = new Size(0x43, 13);
-            this.Label12.TabIndex = 0x2e;
+            this.Label12.Size = new System.Drawing.Size(67, 13);
+            this.Label12.TabIndex = 46;
             this.Label12.Text = "رقم التليفون :";
-            this.Address.Location = new Point(14, 0x6c);
+            // 
+            // Address
+            // 
+            this.Address.Location = new System.Drawing.Point(14, 108);
             this.Address.Name = "Address";
-            this.Address.Size = new Size(0x175, 20);
-            this.Address.TabIndex = 0x2d;
+            this.Address.Size = new System.Drawing.Size(373, 20);
+            this.Address.TabIndex = 45;
+            // 
+            // Label11
+            // 
             this.Label11.AutoSize = true;
-            this.Label11.Location = new Point(0x188, 0x6f);
+            this.Label11.Location = new System.Drawing.Point(392, 111);
             this.Label11.Name = "Label11";
-            this.Label11.Size = new Size(0x2d, 13);
-            this.Label11.TabIndex = 0x2c;
+            this.Label11.Size = new System.Drawing.Size(45, 13);
+            this.Label11.TabIndex = 44;
             this.Label11.Text = "العنوان :";
-            this.AddressGovernerate.Location = new Point(0x1bc, 0x6c);
+            // 
+            // AddressGovernerate
+            // 
+            this.AddressGovernerate.Location = new System.Drawing.Point(444, 108);
             this.AddressGovernerate.Name = "AddressGovernerate";
-            this.AddressGovernerate.Size = new Size(0x71, 20);
-            this.AddressGovernerate.TabIndex = 0x2b;
+            this.AddressGovernerate.Size = new System.Drawing.Size(113, 20);
+            this.AddressGovernerate.TabIndex = 43;
+            // 
+            // Label10
+            // 
             this.Label10.AutoSize = true;
-            this.Label10.Location = new Point(0x233, 0x6f);
+            this.Label10.Location = new System.Drawing.Point(563, 111);
             this.Label10.Name = "Label10";
-            this.Label10.Size = new Size(0x52, 13);
-            this.Label10.TabIndex = 0x2a;
+            this.Label10.Size = new System.Drawing.Size(82, 13);
+            this.Label10.TabIndex = 42;
             this.Label10.Text = "محافظة العنوان :";
-            this.MartialStatus.DropDownStyle = ComboBoxStyle.DropDownList;
+            // 
+            // MartialStatus
+            // 
+            this.MartialStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.MartialStatus.FormattingEnabled = true;
-            object[] items = new object[] { "غير متزوج/ة", "متزوج/ة", "ارملة", "مطلقة" };
-            this.MartialStatus.Items.AddRange(items);
-            this.MartialStatus.Location = new Point(14, 0x4e);
+            this.MartialStatus.Items.AddRange(new object[] {
+            "غير متزوج/ة",
+            "متزوج/ة",
+            "ارملة",
+            "مطلقة"});
+            this.MartialStatus.Location = new System.Drawing.Point(14, 78);
             this.MartialStatus.Name = "MartialStatus";
-            this.MartialStatus.Size = new Size(0x69, 0x15);
-            this.MartialStatus.TabIndex = 0x29;
+            this.MartialStatus.Size = new System.Drawing.Size(105, 21);
+            this.MartialStatus.TabIndex = 41;
+            // 
+            // Label9
+            // 
             this.Label9.AutoSize = true;
-            this.Label9.Location = new Point(0x7d, 0x51);
+            this.Label9.Location = new System.Drawing.Point(125, 81);
             this.Label9.Name = "Label9";
-            this.Label9.Size = new Size(0x56, 13);
+            this.Label9.Size = new System.Drawing.Size(86, 13);
             this.Label9.TabIndex = 40;
             this.Label9.Text = "الحالة الاجتماعية :";
-            this.Nationality.Location = new Point(0xde, 0x4e);
+            // 
+            // Nationality
+            // 
+            this.Nationality.Location = new System.Drawing.Point(222, 78);
             this.Nationality.Name = "Nationality";
-            this.Nationality.Size = new Size(0x70, 20);
-            this.Nationality.TabIndex = 0x27;
+            this.Nationality.Size = new System.Drawing.Size(112, 20);
+            this.Nationality.TabIndex = 39;
+            // 
+            // Label8
+            // 
             this.Label8.AutoSize = true;
-            this.Label8.Location = new Point(0x14e, 0x51);
+            this.Label8.Location = new System.Drawing.Point(334, 81);
             this.Label8.Name = "Label8";
-            this.Label8.Size = new Size(0x33, 13);
-            this.Label8.TabIndex = 0x26;
+            this.Label8.Size = new System.Drawing.Size(51, 13);
+            this.Label8.TabIndex = 38;
             this.Label8.Text = "الجنسية : ";
-            this.Relegion.DropDownStyle = ComboBoxStyle.DropDownList;
+            // 
+            // Relegion
+            // 
+            this.Relegion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Relegion.FormattingEnabled = true;
-            object[] objArray2 = new object[] { "مسلم", "مسيحي" };
-            this.Relegion.Items.AddRange(objArray2);
-            this.Relegion.Location = new Point(0x189, 0x4e);
+            this.Relegion.Items.AddRange(new object[] {
+            "مسلم",
+            "مسيحي"});
+            this.Relegion.Location = new System.Drawing.Point(393, 78);
             this.Relegion.Name = "Relegion";
-            this.Relegion.Size = new Size(0x5b, 0x15);
-            this.Relegion.TabIndex = 0x25;
+            this.Relegion.Size = new System.Drawing.Size(91, 21);
+            this.Relegion.TabIndex = 37;
+            // 
+            // Label7
+            // 
             this.Label7.AutoSize = true;
-            this.Label7.Location = new Point(490, 0x51);
+            this.Label7.Location = new System.Drawing.Point(490, 81);
             this.Label7.Name = "Label7";
-            this.Label7.Size = new Size(0x29, 13);
-            this.Label7.TabIndex = 0x24;
+            this.Label7.Size = new System.Drawing.Size(41, 13);
+            this.Label7.TabIndex = 36;
             this.Label7.Text = "الديانة :";
-            this.Gender.DropDownStyle = ComboBoxStyle.DropDownList;
+            // 
+            // Gender
+            // 
+            this.Gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Gender.FormattingEnabled = true;
-            object[] objArray3 = new object[] { "ذكر", "انثي" };
-            this.Gender.Items.AddRange(objArray3);
-            this.Gender.Location = new Point(0x216, 0x4e);
+            this.Gender.Items.AddRange(new object[] {
+            "ذكر",
+            "انثي"});
+            this.Gender.Location = new System.Drawing.Point(534, 78);
             this.Gender.Name = "Gender";
-            this.Gender.Size = new Size(0x42, 0x15);
-            this.Gender.TabIndex = 0x23;
+            this.Gender.Size = new System.Drawing.Size(66, 21);
+            this.Gender.TabIndex = 35;
+            // 
+            // Label6
+            // 
             this.Label6.AutoSize = true;
-            this.Label6.Location = new Point(0x25e, 80);
+            this.Label6.Location = new System.Drawing.Point(606, 80);
             this.Label6.Name = "Label6";
-            this.Label6.Size = new Size(0x24, 13);
-            this.Label6.TabIndex = 0x22;
+            this.Label6.Size = new System.Drawing.Size(36, 13);
+            this.Label6.TabIndex = 34;
             this.Label6.Text = "النوع :";
-            this.BirthGovernerate.Location = new Point(14, 0x30);
+            // 
+            // BirthGovernerate
+            // 
+            this.BirthGovernerate.Location = new System.Drawing.Point(14, 48);
             this.BirthGovernerate.Name = "BirthGovernerate";
-            this.BirthGovernerate.Size = new Size(0x81, 20);
-            this.BirthGovernerate.TabIndex = 0x21;
+            this.BirthGovernerate.Size = new System.Drawing.Size(129, 20);
+            this.BirthGovernerate.TabIndex = 33;
+            // 
+            // Label5
+            // 
             this.Label5.AutoSize = true;
-            this.Label5.Location = new Point(0x95, 0x33);
+            this.Label5.Location = new System.Drawing.Point(149, 51);
             this.Label5.Name = "Label5";
-            this.Label5.Size = new Size(0x4d, 13);
-            this.Label5.TabIndex = 0x20;
+            this.Label5.Size = new System.Drawing.Size(77, 13);
+            this.Label5.TabIndex = 32;
             this.Label5.Text = "محافظة الميلاد :";
-            this.DateOfBirth.Format = DateTimePickerFormat.Short;
-            this.DateOfBirth.Location = new Point(0xeb, 0x30);
+            // 
+            // DateOfBirth
+            // 
+            this.DateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DateOfBirth.Location = new System.Drawing.Point(235, 48);
             this.DateOfBirth.Name = "DateOfBirth";
-            this.DateOfBirth.Size = new Size(0x67, 20);
-            this.DateOfBirth.TabIndex = 0x1f;
+            this.DateOfBirth.Size = new System.Drawing.Size(103, 20);
+            this.DateOfBirth.TabIndex = 31;
+            // 
+            // Label4
+            // 
             this.Label4.AutoSize = true;
-            this.Label4.Location = new Point(0x158, 0x33);
+            this.Label4.Location = new System.Drawing.Point(344, 51);
             this.Label4.Name = "Label4";
-            this.Label4.Size = new Size(0x44, 13);
+            this.Label4.Size = new System.Drawing.Size(68, 13);
             this.Label4.TabIndex = 30;
             this.Label4.Text = "تاريخ الميلاد :";
-            this.Identity.Location = new Point(0x1a5, 0x30);
+            // 
+            // Identity
+            // 
+            this.Identity.Location = new System.Drawing.Point(421, 48);
             this.Identity.Name = "Identity";
-            this.Identity.Size = new Size(0x94, 20);
-            this.Identity.TabIndex = 0x1d;
+            this.Identity.Size = new System.Drawing.Size(148, 20);
+            this.Identity.TabIndex = 29;
+            this.Identity.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Identity_KeyDown);
+            this.Identity.Leave += new System.EventHandler(this.Identity_Leave);
+            // 
+            // Label3
+            // 
             this.Label3.AutoSize = true;
-            this.Label3.Location = new Point(0x23f, 0x33);
+            this.Label3.Location = new System.Drawing.Point(575, 51);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new Size(70, 13);
-            this.Label3.TabIndex = 0x1c;
+            this.Label3.Size = new System.Drawing.Size(70, 13);
+            this.Label3.TabIndex = 28;
             this.Label3.Text = "الرقم القومي :";
-            this.TeacherCode.Location = new Point(14, 0x10);
+            // 
+            // TeacherCode
+            // 
+            this.TeacherCode.Location = new System.Drawing.Point(14, 16);
             this.TeacherCode.Name = "TeacherCode";
-            this.TeacherCode.Size = new Size(0xbb, 20);
-            this.TeacherCode.TabIndex = 0x1b;
-            this.StaffName.Location = new Point(0x112, 0x10);
+            this.TeacherCode.Size = new System.Drawing.Size(187, 20);
+            this.TeacherCode.TabIndex = 27;
+            this.TeacherCode.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TeacherCode_KeyDown);
+            this.TeacherCode.Leave += new System.EventHandler(this.TeacherCode_Leave);
+            // 
+            // StaffName
+            // 
+            this.StaffName.Location = new System.Drawing.Point(274, 16);
             this.StaffName.Name = "StaffName";
-            this.StaffName.Size = new Size(0x146, 20);
-            this.StaffName.TabIndex = 0x1a;
+            this.StaffName.Size = new System.Drawing.Size(326, 20);
+            this.StaffName.TabIndex = 26;
+            // 
+            // Label2
+            // 
             this.Label2.AutoSize = true;
-            this.Label2.Location = new Point(0xcf, 0x13);
+            this.Label2.Location = new System.Drawing.Point(207, 19);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new Size(0x3b, 13);
-            this.Label2.TabIndex = 0x19;
+            this.Label2.Size = new System.Drawing.Size(59, 13);
+            this.Label2.TabIndex = 25;
             this.Label2.Text = "كود المعلم :";
+            // 
+            // Label1
+            // 
             this.Label1.AutoSize = true;
-            this.Label1.Location = new Point(0x25e, 0x13);
+            this.Label1.Location = new System.Drawing.Point(606, 19);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new Size(0x24, 13);
-            this.Label1.TabIndex = 0x18;
+            this.Label1.Size = new System.Drawing.Size(36, 13);
+            this.Label1.TabIndex = 24;
             this.Label1.Text = "الاسم :";
+            // 
+            // TabPage2
+            // 
             this.TabPage2.Controls.Add(this.FinancialClassEndDate);
             this.TabPage2.Controls.Add(this.Label15);
             this.TabPage2.Controls.Add(this.Label25);
@@ -648,13 +855,16 @@ namespace staffmanagement
             this.TabPage2.Controls.Add(this.TypeOfAppointment);
             this.TabPage2.Controls.Add(this.SpecificGroup);
             this.TabPage2.Controls.Add(this.Label19);
-            this.TabPage2.Location = new Point(4, 0x16);
+            this.TabPage2.Location = new System.Drawing.Point(4, 22);
             this.TabPage2.Name = "TabPage2";
-            this.TabPage2.Padding = new Padding(3);
-            this.TabPage2.Size = new Size(0x28f, 0xbc);
+            this.TabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.TabPage2.Size = new System.Drawing.Size(655, 188);
             this.TabPage2.TabIndex = 1;
             this.TabPage2.Text = "البيانات الوظيفية";
             this.TabPage2.UseVisualStyleBackColor = true;
+            // 
+            // TabPage3
+            // 
             this.TabPage3.Controls.Add(this.PlaceOfQualification);
             this.TabPage3.Controls.Add(this.TypeOfQualification);
             this.TabPage3.Controls.Add(this.Label30);
@@ -665,51 +875,65 @@ namespace staffmanagement
             this.TabPage3.Controls.Add(this.Qualification);
             this.TabPage3.Controls.Add(this.DateOfQualification);
             this.TabPage3.Controls.Add(this.Label28);
-            this.TabPage3.Location = new Point(4, 0x16);
+            this.TabPage3.Location = new System.Drawing.Point(4, 22);
             this.TabPage3.Name = "TabPage3";
-            this.TabPage3.Padding = new Padding(3);
-            this.TabPage3.Size = new Size(0x28f, 0xbc);
+            this.TabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.TabPage3.Size = new System.Drawing.Size(655, 188);
             this.TabPage3.TabIndex = 2;
             this.TabPage3.Text = "بيانات اخر مؤهل";
             this.TabPage3.UseVisualStyleBackColor = true;
+            // 
+            // TabPage4
+            // 
             this.TabPage4.Controls.Add(this.TeachSubject);
             this.TabPage4.Controls.Add(this.Label31);
-            this.TabPage4.Location = new Point(4, 0x16);
+            this.TabPage4.Location = new System.Drawing.Point(4, 22);
             this.TabPage4.Name = "TabPage4";
-            this.TabPage4.Padding = new Padding(3);
-            this.TabPage4.Size = new Size(0x28f, 0xbc);
+            this.TabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.TabPage4.Size = new System.Drawing.Size(655, 188);
             this.TabPage4.TabIndex = 3;
             this.TabPage4.Text = "خاص للمدرس";
             this.TabPage4.UseVisualStyleBackColor = true;
-            this.PrintButton.Location = new Point(12, 0xe0);
+            // 
+            // PrintButton
+            // 
+            this.PrintButton.Location = new System.Drawing.Point(12, 224);
             this.PrintButton.Name = "PrintButton";
-            this.PrintButton.Size = new Size(0x89, 0x22);
-            this.PrintButton.TabIndex = 0x37;
+            this.PrintButton.Size = new System.Drawing.Size(137, 34);
+            this.PrintButton.TabIndex = 55;
             this.PrintButton.Text = "طباعة";
             this.PrintButton.UseVisualStyleBackColor = true;
             this.PrintButton.Visible = false;
-            this.editButton.Location = new Point(0x187, 0xe4);
+            // 
+            // editButton
+            // 
+            this.editButton.Location = new System.Drawing.Point(391, 228);
             this.editButton.Name = "editButton";
-            this.editButton.Size = new Size(0x79, 0x22);
-            this.editButton.TabIndex = 0x38;
+            this.editButton.Size = new System.Drawing.Size(121, 34);
+            this.editButton.TabIndex = 56;
             this.editButton.Text = "تعديل";
             this.editButton.UseVisualStyleBackColor = true;
             this.editButton.Visible = false;
-            base.AutoScaleDimensions = new SizeF(6f, 13f);
-            base.AutoScaleMode = AutoScaleMode.Font;
-            base.ClientSize = new Size(0x2ab, 0x10b);
-            base.Controls.Add(this.editButton);
-            base.Controls.Add(this.PrintButton);
-            base.Controls.Add(this.TabControl1);
-            base.Controls.Add(this.saveButton);
-            base.FormBorderStyle = FormBorderStyle.FixedSingle;
-            base.MaximizeBox = false;
-            base.MinimizeBox = false;
-            base.Name = "ManageStaff";
-            this.RightToLeft = RightToLeft.Yes;
+            this.editButton.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // ManageStaff
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(683, 267);
+            this.Controls.Add(this.editButton);
+            this.Controls.Add(this.PrintButton);
+            this.Controls.Add(this.TabControl1);
+            this.Controls.Add(this.saveButton);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "ManageStaff";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
-            base.StartPosition = FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "اضافة موظف";
+            this.Load += new System.EventHandler(this.AddStaff_Load);
             this.TabControl1.ResumeLayout(false);
             this.TabPage1.ResumeLayout(false);
             this.TabPage1.PerformLayout();
@@ -719,7 +943,8 @@ namespace staffmanagement
             this.TabPage3.PerformLayout();
             this.TabPage4.ResumeLayout(false);
             this.TabPage4.PerformLayout();
-            base.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
 

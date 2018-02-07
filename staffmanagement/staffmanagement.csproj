@@ -95,14 +95,32 @@
     <Compile Include="ShowAll.Designer.cs">
       <DependentUpon>ShowAll.cs</DependentUpon>
     </Compile>
-    <Compile Include="SQLite.cs" />
-    <Compile Include="SQLiteAsync.cs" />
+    <Compile Include="classes\SQLite.cs" />
+    <Compile Include="classes\SQLiteAsync.cs" />
     <Compile Include="StringFilterForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="StringFilterForm.Designer.cs">
       <DependentUpon>StringFilterForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DateFilterForm.resx">
+      <DependentUpon>DateFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListFilterForm.resx">
+      <DependentUpon>ListFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageDepartments.resx">
+      <DependentUpon>ManageDepartments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageJobs.resx">
+      <DependentUpon>ManageJobs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageStaff.resx">
+      <DependentUpon>ManageStaff.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -112,6 +130,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ShowAll.resx">
+      <DependentUpon>ShowAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringFilterForm.resx">
+      <DependentUpon>StringFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

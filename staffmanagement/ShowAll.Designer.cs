@@ -10,8 +10,6 @@ namespace staffmanagement
         private DataGridView dataGrid;
         private ContextMenuStrip editStaffcontextMenu;
         private ContextMenuStrip headerMenuStrip;
-        private ToolStripSeparator ToolStripMenuItem1;
-        private ToolStripMenuItem تحديثToolStripMenuItem;
         private ToolStripMenuItem تصنيفToolStripMenuItem;
         private ToolStripMenuItem تعديلالموظفToolStripMenuItem;
         private ToolStripMenuItem مسحالموظفToolStripMenuItem;
@@ -36,68 +34,100 @@ namespace staffmanagement
         [DebuggerStepThrough]
         private void InitializeComponent()
         {
-            this.components = new Container();
-            ComponentResourceManager manager = new ComponentResourceManager(typeof(ShowAll));
-            this.dataGrid = new DataGridView();
-            this.editStaffcontextMenu = new ContextMenuStrip(this.components);
-            this.تعديلالموظفToolStripMenuItem = new ToolStripMenuItem();
-            this.مسحالموظفToolStripMenuItem = new ToolStripMenuItem();
-            this.ToolStripMenuItem1 = new ToolStripSeparator();
-            this.تحديثToolStripMenuItem = new ToolStripMenuItem();
-            this.headerMenuStrip = new ContextMenuStrip(this.components);
-            this.تصنيفToolStripMenuItem = new ToolStripMenuItem();
-            ((ISupportInitialize)this.dataGrid).BeginInit();
+            this.components = new System.ComponentModel.Container();
+            this.dataGrid = new System.Windows.Forms.DataGridView();
+            this.editStaffcontextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.تعديلالموظفToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.مسحالموظفToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.headerMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.تصنيفToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.تحديثToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).BeginInit();
             this.editStaffcontextMenu.SuspendLayout();
             this.headerMenuStrip.SuspendLayout();
-            base.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // dataGrid
+            // 
             this.dataGrid.AllowUserToAddRows = false;
             this.dataGrid.AllowUserToDeleteRows = false;
-            this.dataGrid.Dock = DockStyle.Fill;
-            this.dataGrid.Location = new Point(0, 0);
-            this.dataGrid.Margin = new Padding(4, 3, 4, 3);
+            this.dataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGrid.Location = new System.Drawing.Point(0, 0);
+            this.dataGrid.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dataGrid.Name = "dataGrid";
             this.dataGrid.ReadOnly = true;
-            this.dataGrid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            this.dataGrid.Size = new Size(0x332, 0x1b5);
+            this.dataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGrid.Size = new System.Drawing.Size(818, 437);
             this.dataGrid.TabIndex = 0;
-            ToolStripItem[] toolStripItems = new ToolStripItem[] { this.تعديلالموظفToolStripMenuItem, this.مسحالموظفToolStripMenuItem, this.ToolStripMenuItem1, this.تحديثToolStripMenuItem };
-            this.editStaffcontextMenu.Items.AddRange(toolStripItems);
+            this.dataGrid.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dataGrid_MouseClick);
+            this.dataGrid.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGrid_MouseDoubleClick);
+            // 
+            // editStaffcontextMenu
+            // 
+            this.editStaffcontextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.تعديلالموظفToolStripMenuItem,
+            this.مسحالموظفToolStripMenuItem});
             this.editStaffcontextMenu.Name = "editStaffcontextMenu";
-            this.editStaffcontextMenu.RightToLeft = RightToLeft.Yes;
-            this.editStaffcontextMenu.Size = new Size(0x95, 0x4c);
+            this.editStaffcontextMenu.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.editStaffcontextMenu.Size = new System.Drawing.Size(149, 48);
+            // 
+            // تعديلالموظفToolStripMenuItem
+            // 
             this.تعديلالموظفToolStripMenuItem.Name = "تعديلالموظفToolStripMenuItem";
-            this.تعديلالموظفToolStripMenuItem.Size = new Size(0x94, 0x16);
+            this.تعديلالموظفToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.تعديلالموظفToolStripMenuItem.Text = "تعديل الموظف";
+            this.تعديلالموظفToolStripMenuItem.Click += new System.EventHandler(this.تعديلالموظفToolStripMenuItem_Click);
+            // 
+            // مسحالموظفToolStripMenuItem
+            // 
             this.مسحالموظفToolStripMenuItem.Name = "مسحالموظفToolStripMenuItem";
-            this.مسحالموظفToolStripMenuItem.Size = new Size(0x94, 0x16);
+            this.مسحالموظفToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.مسحالموظفToolStripMenuItem.Text = "مسح الموظف";
-            this.ToolStripMenuItem1.Name = "ToolStripMenuItem1";
-            this.ToolStripMenuItem1.Size = new Size(0x91, 6);
-            this.تحديثToolStripMenuItem.Name = "تحديثToolStripMenuItem";
-            this.تحديثToolStripMenuItem.Size = new Size(0x94, 0x16);
-            this.تحديثToolStripMenuItem.Text = "تحديث";
-            ToolStripItem[] itemArray2 = new ToolStripItem[] { this.تصنيفToolStripMenuItem };
-            this.headerMenuStrip.Items.AddRange(itemArray2);
+            this.مسحالموظفToolStripMenuItem.Click += new System.EventHandler(this.مسحالموظفToolStripMenuItem_Click);
+            // 
+            // headerMenuStrip
+            // 
+            this.headerMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.تصنيفToolStripMenuItem,
+            this.تحديثToolStripMenuItem});
             this.headerMenuStrip.Name = "headerMenuStrip";
-            this.headerMenuStrip.RightToLeft = RightToLeft.Yes;
-            this.headerMenuStrip.Size = new Size(0x61, 0x1a);
+            this.headerMenuStrip.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.headerMenuStrip.Size = new System.Drawing.Size(107, 48);
+            // 
+            // تصنيفToolStripMenuItem
+            // 
             this.تصنيفToolStripMenuItem.Name = "تصنيفToolStripMenuItem";
-            this.تصنيفToolStripMenuItem.Size = new Size(0x60, 0x16);
+            this.تصنيفToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
             this.تصنيفToolStripMenuItem.Text = "بحث";
-            base.AutoScaleDimensions = new SizeF(8f, 16f);
-            base.AutoScaleMode = AutoScaleMode.Font;
-            base.ClientSize = new Size(0x332, 0x1b5);
-            base.Controls.Add(this.dataGrid);
-            this.Font = new Font("Microsoft Sans Serif", 10f);
-            base.Margin = new Padding(4, 3, 4, 3);
-            base.Name = "ShowAll";
-            this.RightToLeft = RightToLeft.Yes;
+            this.تصنيفToolStripMenuItem.Click += new System.EventHandler(this.تصنيفToolStripMenuItem_Click);
+            // 
+            // تحديثToolStripMenuItem
+            // 
+            this.تحديثToolStripMenuItem.Name = "تحديثToolStripMenuItem";
+            this.تحديثToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
+            this.تحديثToolStripMenuItem.Text = "تحديث";
+            this.تحديثToolStripMenuItem.Click += new System.EventHandler(this.تحديثToolStripMenuItem_Click);
+            // 
+            // ShowAll
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(818, 437);
+            this.Controls.Add(this.dataGrid);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Name = "ShowAll";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.Text = "الموظفين";
-            ((ISupportInitialize)this.dataGrid).EndInit();
+            this.Load += new System.EventHandler(this.MainForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).EndInit();
             this.editStaffcontextMenu.ResumeLayout(false);
             this.headerMenuStrip.ResumeLayout(false);
-            base.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
+
+        private ToolStripMenuItem تحديثToolStripMenuItem;
     }
 }

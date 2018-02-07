@@ -6,6 +6,12 @@ namespace staffmanagement
 {
     public class Staff
     {
+        [DisplayName("رقم التعريفي"), PrimaryKey, AutoIncrement]
+        public int Id { get; set; }
+
+        [DisplayName("الأسم")]
+        public string StaffName { get; set; }
+
         [DisplayName("العنوان")]
         public string Address { get; set; }
 
@@ -54,9 +60,6 @@ namespace staffmanagement
         [DisplayName("النوع")]
         public EnumGender Gender { get; set; }
 
-        [DisplayName("رقم التعريفي"), PrimaryKey, AutoIncrement]
-        public int Id { get; set; }
-
         [DisplayName("الرقم القومي")]
         public string Identity { get; set; }
 
@@ -83,9 +86,6 @@ namespace staffmanagement
 
         [DisplayName("المجموعة النوعية")]
         public string SpecificGroup { get; set; }
-
-        [DisplayName("الأسم")]
-        public string StaffName { get; set; }
 
         [DisplayName("الموقف من العمل")]
         public string StatusOfJob { get; set; }

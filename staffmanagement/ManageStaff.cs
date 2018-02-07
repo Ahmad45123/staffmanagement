@@ -192,7 +192,7 @@ namespace staffmanagement
         {
             if (IsEdit)
             {
-                Staff staff = Main.Db.Table<Staff>().Single(x => x.TeacherCode == TeacherCode.Text);
+                Staff staff = Main.Db.Table<Staff>().SingleOrDefault(x => x.TeacherCode == TeacherCode.Text);
                 if (staff != null)
                 {
                     SelStaff = staff;
