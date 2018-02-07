@@ -9,7 +9,6 @@ namespace staffmanagement
     {
         public ManageDepartments()
         {
-            Load += ManageDepartments_Load;
             InitializeComponent();
         }
 

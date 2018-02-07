@@ -12,7 +12,6 @@ namespace staffmanagement
 
         public ManageStaff()
         {
-            Load += AddStaff_Load;
             IsEdit = false;
             SelStaff = null;
             InitializeComponent();

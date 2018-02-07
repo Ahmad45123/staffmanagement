@@ -12,9 +12,6 @@ namespace staffmanagement
 
         public Main()
         {
-            Load += Main_Load;
-            FormClosing += Main_FormClosing;
-
             if(Properties.Settings.Default.password != "")
             {
                 var enteredText = Interaction.InputBox("فضلا ادخل كلمة المرور");

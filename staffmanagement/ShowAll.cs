@@ -13,7 +13,6 @@ namespace staffmanagement
 
         public ShowAll()
         {
-            Load += MainForm_Load;
             _headerSelected = -1;
             InitializeComponent();
         }
