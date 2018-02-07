@@ -168,7 +168,7 @@ namespace staffmanagement
             // خروجToolStripMenuItem
             // 
             this.خروجToolStripMenuItem.Name = "خروجToolStripMenuItem";
-            this.خروجToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.خروجToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.خروجToolStripMenuItem.Text = "خروج";
             this.خروجToolStripMenuItem.Click += new System.EventHandler(this.خروجToolStripMenuItem_Click);
             // 
@@ -188,14 +188,14 @@ namespace staffmanagement
             // اداToolStripMenuItem
             // 
             this.اداToolStripMenuItem.Name = "اداToolStripMenuItem";
-            this.اداToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.اداToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.اداToolStripMenuItem.Text = "ادارة الاقسام";
             this.اداToolStripMenuItem.Click += new System.EventHandler(this.اداToolStripMenuItem_Click);
             // 
             // ادارةالوظائفToolStripMenuItem
             // 
             this.ادارةالوظائفToolStripMenuItem.Name = "ادارةالوظائفToolStripMenuItem";
-            this.ادارةالوظائفToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ادارةالوظائفToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.ادارةالوظائفToolStripMenuItem.Text = "ادارة الوظائف";
             this.ادارةالوظائفToolStripMenuItem.Click += new System.EventHandler(this.ادارةالوظائفToolStripMenuItem_Click);
             // 
@@ -207,14 +207,14 @@ namespace staffmanagement
             // تعديلToolStripMenuItem
             // 
             this.تعديلToolStripMenuItem.Name = "تعديلToolStripMenuItem";
-            this.تعديلToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.تعديلToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.تعديلToolStripMenuItem.Text = "اضافة";
             this.تعديلToolStripMenuItem.Click += new System.EventHandler(this.تعديلToolStripMenuItem_Click);
             // 
             // تعديلToolStripMenuItem1
             // 
             this.تعديلToolStripMenuItem1.Name = "تعديلToolStripMenuItem1";
-            this.تعديلToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.تعديلToolStripMenuItem1.Size = new System.Drawing.Size(141, 22);
             this.تعديلToolStripMenuItem1.Text = "تعديل";
             this.تعديلToolStripMenuItem1.Click += new System.EventHandler(this.تعديلToolStripMenuItem1_Click);
             // 
@@ -244,6 +244,7 @@ namespace staffmanagement
             this.تغييركلمةالمرورToolStripMenuItem.Name = "تغييركلمةالمرورToolStripMenuItem";
             this.تغييركلمةالمرورToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.تغييركلمةالمرورToolStripMenuItem.Text = "تغيير كلمة المرور";
+            this.تغييركلمةالمرورToolStripMenuItem.Click += new System.EventHandler(this.تغييركلمةالمرورToolStripMenuItem_Click);
             // 
             // عنToolStripMenuItem
             // 

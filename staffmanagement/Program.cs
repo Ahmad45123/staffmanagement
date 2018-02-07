@@ -16,7 +16,8 @@ namespace staffmanagement
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             mainForm = new Main();
-            Application.Run(mainForm);
+            if(!mainForm.IsDisposed)
+                Application.Run(mainForm);
         }
     }
 }

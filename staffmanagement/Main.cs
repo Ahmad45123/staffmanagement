@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
 using SQLite;
+using System.Security.Cryptography;
+using Microsoft.VisualBasic;
 
 namespace staffmanagement
 {
@@ -12,6 +14,14 @@ namespace staffmanagement
         {
             Load += Main_Load;
             FormClosing += Main_FormClosing;
+
+            if(Properties.Settings.Default.password != "")
+            {
+                var enteredText = Interaction.InputBox("فضلا ادخل كلمة المرور");
+                if(CreateSHAHash(enteredText) != Properties.Settings.Default.password)
+                    Close();
+            }
+
             InitializeComponent();
         }
 
@@ -27,9 +37,18 @@ namespace staffmanagement
 
         private void Main_Load(object sender, EventArgs e)
         {
-            Db.CreateTable<Department>(CreateFlags.None);
-            Db.CreateTable<Job>(CreateFlags.None);
-            Db.CreateTable<Staff>(CreateFlags.None);
+            Db.CreateTable<Department>();
+            Db.CreateTable<Job>();
+            Db.CreateTable<Staff>();
+        }
+
+        public static string CreateSHAHash(string Phrase)
+        {
+            SHA512Managed HashTool = new SHA512Managed();
+            Byte[] PhraseAsByte = System.Text.Encoding.UTF8.GetBytes(string.Concat(Phrase));
+            Byte[] EncryptedBytes = HashTool.ComputeHash(PhraseAsByte);
+            HashTool.Clear();
+            return Convert.ToBase64String(EncryptedBytes);
         }
 
         private void اداToolStripMenuItem_Click(object sender, EventArgs e)
@@ -66,6 +85,12 @@ namespace staffmanagement
         {
             Close();
         }
+
+        private void تغييركلمةالمرورToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var newPass = Interaction.InputBox("فضلا ادخل كلمة مرور جديدة");
+            Properties.Settings.Default.password = CreateSHAHash(newPass);
+            Properties.Settings.Default.Save();
+        }
     }
 }
-
