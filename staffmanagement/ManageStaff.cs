@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
 
@@ -167,7 +168,7 @@ namespace staffmanagement
                             }
                             else
                             {
-                                ((DateTimePicker) Controls.Find(info.Name, true)[0]).Value = Convert.ToDate(info.GetValue(SelStaff, null));
+                                ((DateTimePicker) Controls.Find(info.Name, true)[0]).Value = Convert.ToDateTime(info.GetValue(SelStaff, null));
                             }
                         }
                         else

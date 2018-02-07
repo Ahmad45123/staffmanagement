@@ -5,6 +5,8 @@ namespace staffmanagement
 {
     static class Program
     {
+        public static Main mainForm;
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -13,7 +15,8 @@ namespace staffmanagement
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main());
+            mainForm = new Main();
+            Application.Run(mainForm);
         }
     }
 }

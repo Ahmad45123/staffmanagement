@@ -1,4 +1,6 @@
-﻿namespace staffmanagement
+﻿using SQLite;
+
+namespace staffmanagement
 {
     public class Job
     {

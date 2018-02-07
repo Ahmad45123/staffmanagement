@@ -48,7 +48,7 @@ namespace staffmanagement
                     new ManageStaff { 
                         SelStaff = staff,
                         IsEdit = true,
-                        //MdiParent = Main,
+                        MdiParent = Program.mainForm,
                         PrintButton = { Visible = true },
                         Text = "بطاقة الموظف",
                         TabPage1 = { Enabled = false },
@@ -176,7 +176,7 @@ namespace staffmanagement
             dataGrid.SuspendLayout();
             if (_headerSelected != -1)
             {
-                if (Operators.ConditionalCompareObjectEqual(dataGrid.Columns[_headerSelected].Tag, typeof(string), false))
+                if ((Type)dataGrid.Columns[_headerSelected].Tag == typeof(string))
                 {
                     StringFilterForm form = new StringFilterForm
                     {
@@ -199,7 +199,7 @@ namespace staffmanagement
                         }
                     }
                 }
-                else if (Operators.ConditionalCompareObjectEqual(dataGrid.Columns[_headerSelected].Tag, typeof(DateTime), false))
+                else if ((Type)dataGrid.Columns[_headerSelected].Tag == typeof(DateTime))
                 {
                     DateFilterForm form2 = new DateFilterForm();
                     form2.ShowDialog();
@@ -213,7 +213,7 @@ namespace staffmanagement
                         }
                     }
                 }
-                else if (Convert.ToBoolean(Operators.AndObject(Operators.CompareObjectEqual(dataGrid.Columns[_headerSelected].Tag, typeof(int), false), (dataGrid.Columns[_headerSelected].Name == "CurrentDepartment") | (dataGrid.Columns[_headerSelected].Name == "CurrentJob"))))
+                else if ((Type)dataGrid.Columns[_headerSelected].Tag == typeof(int) && ((dataGrid.Columns[_headerSelected].Name == "CurrentDepartment") || (dataGrid.Columns[_headerSelected].Name == "CurrentJob")))
                 {
                     ListFilterForm form3 = new ListFilterForm();
                     if (dataGrid.Columns[_headerSelected].Name == "CurrentJob")
@@ -235,26 +235,26 @@ namespace staffmanagement
 
                     foreach (DataGridViewRow row3 in dataGrid.Rows)
                     {
-                        if (Operators.ConditionalCompareObjectNotEqual(row3.Cells[_headerSelected].Value, form3.listBox.SelectedItem, false))
+                        if (row3.Cells[_headerSelected].Value != form3.listBox.SelectedItem)
                         {
                             row3.Visible = false;
                         }
                     }
                 }
-                else if (Convert.ToBoolean(Operators.OrObject(Operators.OrObject(Operators.CompareObjectEqual(dataGrid.Columns[_headerSelected].Tag, typeof(Staff.EnumGender), false), Operators.CompareObjectEqual(dataGrid.Columns[_headerSelected].Tag, typeof(Staff.EnumMartialStatus), false)), Operators.CompareObjectEqual(dataGrid.Columns[_headerSelected].Tag, typeof(Staff.EnumRelegion), false))))
+                else if ((Type)dataGrid.Columns[_headerSelected].Tag == typeof(Staff.EnumGender) || (Type)dataGrid.Columns[_headerSelected].Tag == typeof(Staff.EnumMartialStatus) || (Type)dataGrid.Columns[_headerSelected].Tag == typeof(Staff.EnumRelegion))
                 {
                     ListFilterForm form4 = new ListFilterForm();
-                    if (Operators.ConditionalCompareObjectEqual(dataGrid.Columns[_headerSelected].Tag, typeof(Staff.EnumGender), false))
+                    if ((Type)dataGrid.Columns[_headerSelected].Tag == typeof(Staff.EnumGender))
                     {
                         string[] items = { "ذكر", "انثي" };
                         form4.listBox.Items.AddRange(items);
                     }
-                    if (Operators.ConditionalCompareObjectEqual(dataGrid.Columns[_headerSelected].Tag, typeof(Staff.EnumMartialStatus), false))
+                    if ((Type)dataGrid.Columns[_headerSelected].Tag == typeof(Staff.EnumMartialStatus))
                     {
                         string[] textArray2 = { "غير متزوج", "متزوج", "ارملة", "مطلقة" };
                         form4.listBox.Items.AddRange(textArray2);
                     }
-                    if (Operators.ConditionalCompareObjectEqual(dataGrid.Columns[_headerSelected].Tag, typeof(Staff.EnumRelegion), false))
+                    if ((Type)dataGrid.Columns[_headerSelected].Tag == typeof(Staff.EnumRelegion))
                     {
                         string[] textArray3 = { "مسلم", "مسيحي" };
                         form4.listBox.Items.AddRange(textArray3);
@@ -264,7 +264,7 @@ namespace staffmanagement
 
                     foreach (DataGridViewRow row4 in dataGrid.Rows)
                     {
-                        if (Operators.ConditionalCompareObjectNotEqual(row4.Cells[_headerSelected].Value, form4.listBox.SelectedItem, false))
+                        if (row4.Cells[_headerSelected].Value != form4.listBox.SelectedItem)
                         {
                             row4.Visible = false;
                         }
@@ -282,7 +282,7 @@ namespace staffmanagement
             new ManageStaff { 
                 SelStaff = staff,
                 IsEdit = true,
-                //MdiParent = MyProject.Forms.Main,
+                MdiParent = Program.mainForm,
                 PrintButton = { Visible = true },
                 Text = "تعديل الموظف"
             }.Show();
